@@ -31,8 +31,14 @@
 //  }
 
 // conditional rendering 4 
+// export default function Todo({task,isDone}){
+//     return(
+//         <li>{task} {isDone && ':Done'}</li>
+//     )
+//  }
+// conditional rendering 5
 export default function Todo({task,isDone}){
     return(
-        <li>{task} {isDone && ':Done'}</li>
+        <li>{task} {isDone || ':Do it'}</li>
     )
  }
